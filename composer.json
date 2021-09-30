@@ -1,0 +1,34 @@
+{
+  "name": "midi/rbac-admin",
+  "description": "midi admin",
+  "type": "library",
+  "license": "MIT",
+  "authors": [
+    {
+      "name": "hum",
+      "email": "madril1130@gmail.com"
+    }
+  ],
+  "autoload": {
+    "psr-4": {
+      "Hum\\Admin\\": "src/"
+    },
+    "files": [
+      "src/helpers.php"
+    ]
+  },
+  "require": {
+    "php": ">=7.0.0",
+    "laravel/framework": ">=5.5"
+  },
+  "extra": {
+    "laravel": {
+      "providers": [
+        "Hum\\Admin\\HumAdminServiceProvider"
+      ],
+      "aliases": {
+        "Admin": "Hum\\Admin\\Facades\\Admin"
+      }
+    }
+  }
+}
